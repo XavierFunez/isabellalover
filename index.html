@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE YOU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Paso 1: el sobre -->
+    <div class="step active" id="step1">
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-seal"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paso 2: la carta empieza a salir -->
+    <div class="step" id="step2">
+        <div class="letter-container" id="letterContainer">
+            <div class="letter">
+                <p>Hay un mensaje especial esperándote...</p>
+                <button id="unfold-button">Ábrelo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paso 3: mensaje final con botón -->
+    <div class="step" id="step3">
+        <div class="final-card-container">
+            <h1 class="greeting" id="greetingText">Con todo mi cariño 💌</h1>
+            <h2 class="name">Mi Isa<3</h2>
+
+            <div class="letter-background">
+                <p class="wish-message">
+                    Te amo con todo mi corazon y espero que tengas un lindo cumpleaños <br>
+                    Que sepas que eres una chica increible y te deseo que cumplas mas años!
+                </p>
+            </div>
+
+            <!-- Botón para abrir otra "carta/página" -->
+            <button class="letter-button" onclick="window.location.href='carta.html'">Leer la carta completa</button>
+
+            <!-- Pastel -->
+            <div class="cake">
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="drip drip2"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
